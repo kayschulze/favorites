@@ -1,6 +1,6 @@
 $(function() {
   $("#favorites").submit(function(event) {
-  event.preventDefault();
+    event.preventDefault();
     var specSport = $("#sportSpect").val();
     var playSport = $("#sportPlay").val();
     var favMovie = $("#movie").val();
@@ -19,8 +19,7 @@ $(function() {
       $(".favMovie").text(favoritesList[2]);
       $(".favActor").text(favoritesList[3]);
       $(".favAthlete").text(favoritesList[4]);
-
-
-      console.log(favoritesList);
+      $("#favorites").hide();
+      $("#favoritesStory").toggle();
   });
 });
