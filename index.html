@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Favorite list</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>What are a few of your favorite things?</h2>
+      <form id="favorites">
+        <h3>What is your favorite spectator sport?</h3>
+        <div class="form-group">
+          <label for="sportSpec">Spectator Sport</label>
+          <input id="sportSpect" class="form-control" type="text">
+        </div>
+        <h3>What is your favorite sport to play?</h3>
+        <div class="form-group">
+          <input id="sportPlay" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <h3> What is your favorite movie?</h3>
+          <input id="movie" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <h3> Which one of the following actors you like most?</h3>
+          <div class="radio">
+            <input id="actor" name="actor" type="radio"> Tom Cruise
+          </div>
+          <div class="radio">
+            <input id="actor" name="actor" type="radio"> Brad Pit
+          </div>
+          <div class="radio">
+            <input id="actor" name="actor" type="radio"> Harrison Ford
+          </div>
+          <div class="radio">
+            <input id="actor" name="actor" type="radio"> Denzel Washington
+          </div>
+        </div>
+        <h3>Which foods would you list amongst your favorites?</h3>
+        <div class="checkbox">
+          <input type="checkbox" name="favFoods" id="garlic">Garlic
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="favFoods" id="jalapenos">Jalapenos
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="favFoods" id="vinegar">Vinegar
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="favFoods" id="peanuts">Peanuts
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="favFoods" id="chicken">Chicken
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="favFoods" id="enjera">Enjera
+        </div>
+        <h3>Who is your number one athlete?</h3>
+        <div class="form-group">
+          <select id="athlete" class="form-control">
+            <option value="Usain Bolt">--sellect athlete--</option>
+            <option value="Usain Bolt">Usain Bolt</option>
+            <option value="Tiger Woods">Tiger Woods</option>
+            <option value="Tamu Salani">Tamu Salani</option>
+            <option value="Michael Phelps">Michael Phelps</option>
+            <option value="Jerome Kersey">Jerome Kersey</option>
+            <option value="Florence Griffith Joyner">Florence Griffith Joyner</option>
+            <option value="Venus Williams">Venus Williams</option>
+          </select>
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+
+
+      </form>
+    </div>
+  </body>
+</html>
