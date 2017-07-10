@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Favorite list</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <!--link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script-->
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
   </head>
@@ -23,45 +29,28 @@
         </div>
         <h3>What is your favorite sport to play?</h3>
         <div class="form-group">
+          <label for="sportPlay">Sport to play</label>
           <input id="sportPlay" class="form-control" type="text">
         </div>
         <div class="form-group">
           <h3> What is your favorite movie?</h3>
+          <label for="movie">Movie</label>
           <input id="movie" class="form-control" type="text">
         </div>
         <div class="form-group">
           <h3> Which one of the following actors you like most?</h3>
           <div class="radio">
-            <input id="actor" name="actor" type="radio"> Tom Cruise
+            <input type="radio" name="actor" value="Tom Cruise"> Tom Cruise
           </div>
           <div class="radio">
-            <input id="actor" name="actor" type="radio"> Brad Pit
+            <input type="radio" name="actor" value="Brad Pit"> Brad Pit
           </div>
           <div class="radio">
-            <input id="actor" name="actor" type="radio"> Harrison Ford
+            <input type="radio" name="actor" value="Harrison Ford"> Harrison Ford
           </div>
           <div class="radio">
-            <input id="actor" name="actor" type="radio"> Denzel Washington
+            <input type="radio" name="actor" value="Denzel Washington"> Denzel Washington
           </div>
-        </div>
-        <h3>Which foods would you list amongst your favorites?</h3>
-        <div class="checkbox">
-          <input type="checkbox" name="favFoods" id="garlic">Garlic
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="favFoods" id="jalapenos">Jalapenos
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="favFoods" id="vinegar">Vinegar
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="favFoods" id="peanuts">Peanuts
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="favFoods" id="chicken">Chicken
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="favFoods" id="enjera">Enjera
         </div>
         <h3>Who is your number one athlete?</h3>
         <div class="form-group">
@@ -76,10 +65,10 @@
             <option value="Venus Williams">Venus Williams</option>
           </select>
         </div>
-        <button class="btn btn-success" type="submit">Submit</button>
-
-
+        <button id="show-favorites" type="submit" class="btn btn-success">Submit</button>
       </form>
+      <div class="favOutput">
+      </div>
     </div>
   </body>
 </html>
